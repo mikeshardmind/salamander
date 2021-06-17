@@ -1,0 +1,15 @@
+[tool.pyright]
+include = ["src", "runner.py"]
+strict = ["src", "runner.py"]
+
+typeCheckingMode = "strict"
+useLibraryCodeForTypes = True
+
+pythonVersion = "3.8"
+pythonPlatform = "Linux"
+
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+include = ["src", "runner.py"]

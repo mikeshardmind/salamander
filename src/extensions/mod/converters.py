@@ -188,7 +188,8 @@ class SearchBanConverter(NamedTuple):
             if joined_discord and m.created_at + joined_discord < ctx.message.created_at:
                 continue
 
-            if ns.nopfp and m.avatar is not None:  # changes in d.py 2.0
+            if ns.nopfp and m._avatar is not None:
+                # TODO: ask Danny for exposed method to check this.
                 continue
 
             members.append(m)
